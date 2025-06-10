@@ -2,9 +2,9 @@
 
 The official pytorch implementation of FasterPET (FPET) from our paper [Faster Parameter-Efficient Tuning with Token Redundancy Reduction](https://arxiv.org/abs/2503.20282)
 
-Kwonyoung Kim<sup>1</sup> Jungin Park<sup>1*</sup> Jin Kim<sup>1</sup> Hyeongjun Kwon<sup>1</sup> Kwanghoon Sohn<sup>1*</sup>
+Kwonyoung Kim<sup>1</sup> Jungin Park<sup>1*</sup> Jin Kim<sup>1</sup> Hyeongjun Kwon<sup>1</sup> Kwanghoon Sohn<sup>1,2*</sup>
 
-<sup>1</sup>Yonsei University  <sup>*</sup>Corresponding authors
+<sup>1</sup>Yonsei University <sup>2</sup>𝐊orea Institute of Science and Technology (KIST) <sup>*</sup>Corresponding authors
 
 
 ## Installation
