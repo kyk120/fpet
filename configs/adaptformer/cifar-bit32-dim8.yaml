@@ -1,0 +1,7 @@
+backbone: vit_base_patch16_224_in21k
+bit: 32
+dataset: cifar
+dim: 8
+method: adaptformer
+num_class: 100
+scale: 1
