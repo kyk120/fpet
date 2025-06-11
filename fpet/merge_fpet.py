@@ -44,8 +44,6 @@ def checkerboard_split(x: torch.Tensor, protected: int):
     x_tr = x_others[..., ::2, :][:, 1::2, :, :].reshape(B, -1, C)
     x_bl = x_others[..., 1::2, :][:, ::2, :, :].reshape(B, -1, C)
 
-    # a = torch.cat([x_cls, x_tl, x_br], dim=1)
-    # b = torch.cat([x_tr, x_bl], dim=1)
     a = torch.cat([x_tl, x_br], dim=1)
     b_tensors = [x_tr, x_bl]
     if protected:
@@ -53,8 +51,6 @@ def checkerboard_split(x: torch.Tensor, protected: int):
     if protected == 2:
         b_tensors = b_tensors + [x_distill]
     b = torch.cat(b_tensors, dim=1)
-    # a = torch.cat([x_tr, x_bl], dim=1)
-    # b = torch.cat([x_cls, x_tl, x_br], dim=1)
 
     return a, b
 
